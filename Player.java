@@ -19,7 +19,7 @@ public class Player {
     private int wins ;
 
     /**
-     * amount of wins the player has
+     * amount of losses the player has
      */
     private int losses ;
 
@@ -92,16 +92,32 @@ public class Player {
     }
 
     //toString
+
+    /**
+     * Returns all of a player's stats
+     * @return all of a player's stats
+     */
     public String toString() {
         return ("Name: " + this.name + " \nWins: " + this.wins + "\nLosses: " + this.losses + "\n");
     }
 
     //calculate success rate
+
+    /**
+     * Calculates a player's success rate of scoring
+     * @param player the player
+     * @return the player's success rate
+     */
     public double successRate(Player player){
         return player.wins / player.losses ;
     }
 
     //cheer for a player(if we implement a chat feature)(dependant on user class)(other class)
+
+    /**
+     * Cheer for a player (In chat)
+     * @param user the user that is cheering
+     */
     public void cheerForPlayer(User user){
         System.out.println(user.getUsername()+" is cheering for "+this.name);
     }

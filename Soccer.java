@@ -2,8 +2,8 @@
  Name: Matthew
  <p>
  Date: April 28, 2022
- Description: The Sports super class. Sports are like minigames that we make to simulate real games, featuring random possibilities,
- resulting in goals, commentary and what not. Has overall result win or loss because the user is betting on the sport after all.
+ Description: The Soccer class. Sports are like minigames that we make to simulate real games, featuring random possibilities,
+ resulting in goals, commentary. Has overall result win or loss because the user is betting on the sport after all.
  */
 import java.util.*;
 import java.util.Random;
@@ -14,7 +14,6 @@ public class Soccer extends Sports{
     private int homeScore=0;
     private int opposingScore=0;
 
-    //Constructor to make a soccer game
     public Soccer(Player player1, Player player2, Player player3, Player player4, Player player5, Player player6,
                   Player player7,Player player8,Player player9,Player player10){
         super(player1, player2, player3, player4, player5, player6, player7,player8,player9,player10);
