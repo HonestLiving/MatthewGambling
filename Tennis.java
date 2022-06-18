@@ -194,6 +194,10 @@ public class Tennis extends Sports{
         jary.getWallet().changeMoney(1000000);
         tennis.runTennis(bet, selectedTeam, jary);
         System.out.println("New balance: "+ jary.getWallet().getQtyUSD());
+    }
 
+    //Wave to audience member (Dependant on my player class)(My class)
+    public void wave (Player player){
+        System.out.println(player.getName() +" waves to the crowd");
     }
 }
